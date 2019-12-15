@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>try</title>
+	<style>
+		.brd {
+			width: 350px;
+    border: 6px double black; /* Параметры границы */
+    background: #696969; /* Цвет фона */
+    padding: 20px; /* Поля вокруг текста */
+    margin: 10px; /* Отступы вокруг */
+   }
+
+   .red {
+	width: 150px;
+    background: #FF0000; /* Цвет фона */
+    padding: 5px; /* Поля вокруг текста */
+    margin: 5px; /* Отступы вокруг */
+   }
+
+   .green {
+	width: 290px; /* Цвет фона */
+    border: 1px dashed; /* Параметры границы */
+    background: #00FF00;
+     /* Цвет фона */
+   
+   }
+   .position {
+   	position: absolute;
+	top: 290px;
+	left: 160px;
+   
+   }
+	</style>
+</head>
+<body> 
+<form action="handler.php">
+	<div class="brd">
+	<p> <strong> Имя: </strong> 
+	<input type="text" class="green" maxlength="25" size="40" name="login"></p>
+	<p> <strong> Пароль: </strong> 
+	<input type="password" maxlength="25" size="37" name="password"> </p>
+	<p> <div class="red"> <input type="checkbox" name="option1" value="a1">Запомнить меня </div> </p>
+	<p><input type="button" value=" Войти "></p>
+</div>
+</form>
+<form action="handler.php">
+	<div class="brd">
+	<p> <img src="flag.jpg" alt="Флаг" width="100" height="101"> 
+	 	<select class="position">
+  		<option>Россия</option>
+  		<option>США</option>
+  		<option>Украина</option>
+		</select>
+ 	</p>
+	<p><input type="button" value=" Сохранить "></p>
+	</div>
+</form>
+</body>
+</html>
